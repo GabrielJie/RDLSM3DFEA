@@ -92,7 +92,7 @@ while opc<=OP.NOI
         Lambda=OP.Mu*(VC(opc)-VC(1)+(VC(1)-OP.VC0)*opc/OP.nRelax);
     else
         Lambda =Lambda+OP.Gamma*(VC(opc)-OP.VC0);
-        OP.GammaGamma = min(OP.Gamma+OP.dGamma,OP.maxGamma);
+        OP.Gamma = min(OP.Gamma+OP.dGamma,OP.maxGamma);
     end
 %**************************************************************************
     % V = Boundary velocity in LS method
