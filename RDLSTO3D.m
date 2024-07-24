@@ -464,7 +464,7 @@ function [T1e,T2e] = RD_T1T2Generator(ngp,els)
                 % T1 and T2 for each element = sum(Stiffness at each
                 % gussian point)
                     T1e = T1e+N'*N*Volg(k,j,i);
-                    T2e = T1e+N_X_Y_Z'*N_X_Y_Z*Volg(k,j,i);
+                    T2e = T2e+N_X_Y_Z'*N_X_Y_Z*Volg(k,j,i);
 %==========================================================================
             end
         end
